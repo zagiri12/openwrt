@@ -1,6 +1,6 @@
 
 ===== TIME =====
-Thu Feb 19 00:48:13 +02 2026
+Thu Feb 19 00:58:56 +02 2026
 
 ===== INTERFACES (ip -4 a) =====
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000
@@ -73,6 +73,7 @@ Thu Feb 19 00:40:30 2026 daemon.notice openvpn(sweden)[1616]: Initialization Seq
 Thu Feb 19 00:44:24 2026 daemon.info hostapd: phy0-ap0: STA 80:9d:65:e4:89:3c WPA: pairwise key handshake completed (RSN)
 Thu Feb 19 00:44:29 2026 daemon.info hostapd: phy0-ap0: STA 80:9d:65:e4:89:3c WPA: pairwise key handshake completed (RSN)
 Thu Feb 19 00:45:12 2026 daemon.info hostapd: phy0-ap0: STA aa:bd:55:b7:29:e9 WPA: pairwise key handshake completed (RSN)
+Thu Feb 19 00:57:04 2026 daemon.info hostapd: phy0-ap0: STA aa:bd:55:b7:29:e9 WPA: pairwise key handshake completed (RSN)
 
 ===== OPENVPN UCI (full) =====
 openvpn.sweden=openvpn
@@ -263,7 +264,7 @@ dhcp.@host[0].mac='AA:BD:55:B7:29:E9'
 
 ===== DNSMASQ RUNTIME =====
  2393 root      2852 S    {dnsmasq} /sbin/ujail -t 5 -n dnsmasq -u -l -r /bin/ubus -r /etc/TZ -r /etc/dnsmasq.conf -r /etc/ethers -
- 2420 dnsmasq   1680 S    /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c -k -x /var/run/dnsmasq/dnsmasq.cfg01411c.pid
+ 2420 dnsmasq   1688 S    /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c -k -x /var/run/dnsmasq/dnsmasq.cfg01411c.pid
 
 ===== RESOLV FILES =====
 -rw-r--r--    1 root     root            47 Feb 19 00:40 /tmp/resolv.conf
@@ -286,10 +287,10 @@ nameserver 8.8.4.4
 Server:		127.0.0.1
 Address:	127.0.0.1:53
 
+Non-authoritative answer:
 Name:	google.com
 Address: 198.18.160.1
 
-Non-authoritative answer:
 Name:	google.com
 Address: 2a00:1450:400f:806::200e
 
@@ -312,10 +313,10 @@ Server:		198.18.0.1
 Address:	198.18.0.1:53
 
 Name:	google.com
-Address: 2a00:1450:400f:806::200e
+Address: 198.18.160.1
 
 Name:	google.com
-Address: 198.18.160.1
+Address: 2a00:1450:400f:806::200e
 
 
 --- nslookup google.com 198.18.0.2 ---
@@ -334,10 +335,10 @@ Server:		1.1.1.1
 Address:	1.1.1.1:53
 
 Name:	google.com
-Address: 198.18.160.1
+Address: 2a00:1450:400f:806::200e
 
 Name:	google.com
-Address: 2a00:1450:400f:806::200e
+Address: 198.18.160.1
 
 
 --- nslookup google.com 8.8.8.8 ---
