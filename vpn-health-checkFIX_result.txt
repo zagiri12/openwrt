@@ -1,6 +1,6 @@
 
 ===== TIME =====
-Thu Feb 19 01:14:44 +02 2026
+Thu Feb 19 02:18:04 +02 2026
 
 ===== INTERFACES (ip -4 a) =====
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000
@@ -26,52 +26,52 @@ default via 192.168.1.2 dev eth0  src 192.168.1.100
 192.168.8.0/24 dev br-lan scope link  src 192.168.8.1 
 
 ===== OPENVPN PROCESS =====
- 1631 root      7512 S    /usr/sbin/openvpn --syslog openvpn(sweden) --status /var/run/openvpn.sweden.status --cd /etc/openvpn --co
+ 1567 root      7512 S    /usr/sbin/openvpn --syslog openvpn(sweden) --status /var/run/openvpn.sweden.status --cd /etc/openvpn --co
 
 ===== OPENVPN LOG (tail) =====
-Thu Feb 19 01:08:24 2026 kern.info kernel: [    0.009105] NET: Registered PF_NETLINK/PF_ROUTE protocol family
-Thu Feb 19 01:08:26 2026 daemon.notice openvpn(sweden)[1631]: Note: Kernel support for ovpn-dco missing, disabling data channel offload.
-Thu Feb 19 01:08:26 2026 daemon.notice openvpn(sweden)[1631]: OpenVPN 2.6.17 aarch64-openwrt-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] [DCO]
-Thu Feb 19 01:08:26 2026 daemon.notice openvpn(sweden)[1631]: library versions: OpenSSL 3.0.19 27 Jan 2026, LZO 2.10
-Thu Feb 19 01:08:26 2026 daemon.notice openvpn(sweden)[1631]: DCO version: N/A
-Thu Feb 19 01:08:26 2026 daemon.warn openvpn(sweden)[1631]: WARNING: --ns-cert-type is DEPRECATED.  Use --remote-cert-tls instead.
-Thu Feb 19 01:08:26 2026 daemon.warn openvpn(sweden)[1631]: NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
-Thu Feb 19 01:08:31 2026 daemon.err openvpn(sweden)[1631]: RESOLVE: Cannot resolve host address: str-sto303.strongconnectivity.com:5938 (Try again)
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: Socket Buffers: R=[131072->131072] S=[16384->16384]
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: Attempting to establish TCP connection with [AF_INET]185.147.213.248:5938
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: TCP connection established with [AF_INET]185.147.213.248:5938
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: TCPv4_CLIENT link local: (not bound)
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: TCPv4_CLIENT link remote: [AF_INET]185.147.213.248:5938
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: TLS: Initial packet from [AF_INET]185.147.213.248:5938, sid=bc7dfecc 9bfa04fe
-Thu Feb 19 01:08:31 2026 daemon.warn openvpn(sweden)[1631]: WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: VERIFY OK: depth=1, C=US, ST=TX, L=Dallas, O=strongtechnology.net, CN=strongtechnology.net CA, emailAddress=lecerts@strongtechnology.net
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: NOTE: --mute triggered...
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: 3 variation(s) on previous 3 message(s) suppressed by --mute
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: [openvpn] Peer Connection Initiated with [AF_INET]185.147.213.248:5938
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: TLS: move_session: dest=TM_ACTIVE src=TM_INITIAL reinit_src=1
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: NOTE: --mute triggered...
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: 1 variation(s) on previous 3 message(s) suppressed by --mute
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: PUSH: Received control message: 'PUSH_REPLY,dhcp-option DNS 198.18.0.1,dhcp-option DNS 198.18.0.2,ping 1,ping-restart 60,route-gateway 100.64.64.1,topology subnet,ping 1,ping-restart 30,socket-flags TCP_NODELAY,ifconfig 100.64.64.2 255.255.254.0,peer-id 0,cipher AES-256-GCM'
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: NOTE: --mute triggered...
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: 4 variation(s) on previous 3 message(s) suppressed by --mute
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: net_route_v4_best_gw query: dst 0.0.0.0
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: net_route_v4_best_gw result: via 192.168.1.2 dev eth0
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: TUN/TAP device tun0 opened
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: net_iface_mtu_set: mtu 1400 for tun0
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: net_iface_up: set tun0 up
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: net_addr_v4_add: 100.64.64.2/23 dev tun0
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: /usr/libexec/openvpn-hotplug up sweden tun0 1400 0 100.64.64.2 255.255.254.0 init
-Thu Feb 19 01:08:31 2026 daemon.notice netifd: Network device 'tun0' link is up
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: Data Channel: cipher 'AES-256-GCM', peer-id: 0
-Thu Feb 19 01:08:31 2026 daemon.notice openvpn(sweden)[1631]: NOTE: --mute triggered...
-Thu Feb 19 01:08:31 2026 user.notice firewall: Reloading firewall due to ifup of vpn (tun0)
-Thu Feb 19 01:08:33 2026 daemon.info hostapd: phy0-ap0: STA 80:9d:65:e4:89:3c WPA: pairwise key handshake completed (RSN)
-Thu Feb 19 01:08:33 2026 daemon.notice openvpn(sweden)[1631]: 1 variation(s) on previous 3 message(s) suppressed by --mute
-Thu Feb 19 01:08:33 2026 daemon.notice openvpn(sweden)[1631]: net_route_v4_add: 185.147.213.248/32 via 192.168.1.2 dev [NULL] table 0 metric -1
-Thu Feb 19 01:08:33 2026 daemon.notice openvpn(sweden)[1631]: net_route_v4_add: 0.0.0.0/1 via 100.64.64.1 dev [NULL] table 0 metric -1
-Thu Feb 19 01:08:33 2026 daemon.notice openvpn(sweden)[1631]: net_route_v4_add: 128.0.0.0/1 via 100.64.64.1 dev [NULL] table 0 metric -1
-Thu Feb 19 01:08:33 2026 daemon.notice openvpn(sweden)[1631]: Initialization Sequence Completed
-Thu Feb 19 01:12:58 2026 daemon.info hostapd: phy0-ap0: STA aa:bd:55:b7:29:e9 WPA: pairwise key handshake completed (RSN)
+Thu Feb 19 01:44:27 2026 kern.info kernel: [    0.009034] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Thu Feb 19 01:44:29 2026 daemon.notice openvpn(sweden)[1567]: Note: Kernel support for ovpn-dco missing, disabling data channel offload.
+Thu Feb 19 01:44:29 2026 daemon.notice openvpn(sweden)[1567]: OpenVPN 2.6.17 aarch64-openwrt-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] [DCO]
+Thu Feb 19 01:44:29 2026 daemon.notice openvpn(sweden)[1567]: library versions: OpenSSL 3.0.19 27 Jan 2026, LZO 2.10
+Thu Feb 19 01:44:29 2026 daemon.notice openvpn(sweden)[1567]: DCO version: N/A
+Thu Feb 19 01:44:29 2026 daemon.warn openvpn(sweden)[1567]: WARNING: --ns-cert-type is DEPRECATED.  Use --remote-cert-tls instead.
+Thu Feb 19 01:44:29 2026 daemon.warn openvpn(sweden)[1567]: NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Thu Feb 19 01:44:29 2026 daemon.info hostapd: phy0-ap0: STA 80:9d:65:e4:89:3c WPA: pairwise key handshake completed (RSN)
+Thu Feb 19 01:44:34 2026 daemon.err openvpn(sweden)[1567]: RESOLVE: Cannot resolve host address: str-sto303.strongconnectivity.com:5938 (Try again)
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: Socket Buffers: R=[131072->131072] S=[16384->16384]
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: Attempting to establish TCP connection with [AF_INET]185.147.213.248:5938
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: TCP connection established with [AF_INET]185.147.213.248:5938
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: TCPv4_CLIENT link local: (not bound)
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: TCPv4_CLIENT link remote: [AF_INET]185.147.213.248:5938
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: TLS: Initial packet from [AF_INET]185.147.213.248:5938, sid=2b68772c e43d701b
+Thu Feb 19 01:44:34 2026 daemon.warn openvpn(sweden)[1567]: WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: VERIFY OK: depth=1, C=US, ST=TX, L=Dallas, O=strongtechnology.net, CN=strongtechnology.net CA, emailAddress=lecerts@strongtechnology.net
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: NOTE: --mute triggered...
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: 3 variation(s) on previous 3 message(s) suppressed by --mute
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: [openvpn] Peer Connection Initiated with [AF_INET]185.147.213.248:5938
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: TLS: move_session: dest=TM_ACTIVE src=TM_INITIAL reinit_src=1
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: NOTE: --mute triggered...
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: 1 variation(s) on previous 3 message(s) suppressed by --mute
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: PUSH: Received control message: 'PUSH_REPLY,dhcp-option DNS 198.18.0.1,dhcp-option DNS 198.18.0.2,ping 1,ping-restart 60,route-gateway 100.64.64.1,topology subnet,ping 1,ping-restart 30,socket-flags TCP_NODELAY,ifconfig 100.64.64.2 255.255.254.0,peer-id 0,cipher AES-256-GCM'
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: NOTE: --mute triggered...
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: 4 variation(s) on previous 3 message(s) suppressed by --mute
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: net_route_v4_best_gw query: dst 0.0.0.0
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: net_route_v4_best_gw result: via 192.168.1.2 dev eth0
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: TUN/TAP device tun0 opened
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: net_iface_mtu_set: mtu 1400 for tun0
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: net_iface_up: set tun0 up
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: net_addr_v4_add: 100.64.64.2/23 dev tun0
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: /usr/libexec/openvpn-hotplug up sweden tun0 1400 0 100.64.64.2 255.255.254.0 init
+Thu Feb 19 01:44:34 2026 daemon.notice netifd: Network device 'tun0' link is up
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: Data Channel: cipher 'AES-256-GCM', peer-id: 0
+Thu Feb 19 01:44:34 2026 daemon.notice openvpn(sweden)[1567]: NOTE: --mute triggered...
+Thu Feb 19 01:44:34 2026 user.notice firewall: Reloading firewall due to ifup of vpn (tun0)
+Thu Feb 19 02:12:03 2026 daemon.notice openvpn(sweden)[1567]: 1 variation(s) on previous 3 message(s) suppressed by --mute
+Thu Feb 19 02:12:03 2026 daemon.notice openvpn(sweden)[1567]: net_route_v4_add: 185.147.213.248/32 via 192.168.1.2 dev [NULL] table 0 metric -1
+Thu Feb 19 02:12:03 2026 daemon.notice openvpn(sweden)[1567]: net_route_v4_add: 0.0.0.0/1 via 100.64.64.1 dev [NULL] table 0 metric -1
+Thu Feb 19 02:12:03 2026 daemon.notice openvpn(sweden)[1567]: net_route_v4_add: 128.0.0.0/1 via 100.64.64.1 dev [NULL] table 0 metric -1
+Thu Feb 19 02:12:03 2026 daemon.notice openvpn(sweden)[1567]: Initialization Sequence Completed
+Thu Feb 19 02:18:00 2026 daemon.info hostapd: phy0-ap0: STA aa:bd:55:b7:29:e9 WPA: pairwise key handshake completed (RSN)
 
 ===== OPENVPN UCI (full) =====
 openvpn.sweden=openvpn
@@ -89,7 +89,6 @@ network.loopback.proto='static'
 network.loopback.ipaddr='127.0.0.1'
 network.loopback.netmask='255.0.0.0'
 network.globals=globals
-network.globals.ula_prefix='fd52:4f82:dad8::/48'
 network.globals.packet_steering='1'
 network.@device[0]=device
 network.@device[0].name='br-lan'
@@ -261,14 +260,14 @@ dhcp.@host[0].ip='192.168.8.233'
 dhcp.@host[0].mac='AA:BD:55:B7:29:E9'
 
 ===== DNSMASQ RUNTIME =====
- 2398 root      2852 S    {dnsmasq} /sbin/ujail -t 5 -n dnsmasq -u -l -r /bin/ubus -r /etc/TZ -r /etc/dnsmasq.conf -r /etc/ethers -
- 2425 dnsmasq   1684 S    /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c -k -x /var/run/dnsmasq/dnsmasq.cfg01411c.pid
+ 2344 root      2852 S    {dnsmasq} /sbin/ujail -t 5 -n dnsmasq -u -l -r /bin/ubus -r /etc/TZ -r /etc/dnsmasq.conf -r /etc/ethers -
+ 2371 dnsmasq   1680 S    /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c -k -x /var/run/dnsmasq/dnsmasq.cfg01411c.pid
 
 ===== RESOLV FILES =====
--rw-r--r--    1 root     root            47 Feb 19 01:08 /tmp/resolv.conf
+-rw-r--r--    1 root     root            47 Feb 19 01:44 /tmp/resolv.conf
 
 /tmp/resolv.conf.d:
--rw-r--r--    1 root     root            92 Feb 19 01:08 resolv.conf.auto
+-rw-r--r--    1 root     root            92 Feb 19 01:44 resolv.conf.auto
 --- /tmp/resolv.conf ---
 search lan
 nameserver 127.0.0.1
@@ -285,7 +284,6 @@ nameserver 8.8.4.4
 Server:		127.0.0.1
 Address:	127.0.0.1:53
 
-Non-authoritative answer:
 Name:	google.com
 Address: 198.18.160.1
 
@@ -345,10 +343,10 @@ Server:		8.8.8.8
 Address:	8.8.8.8:53
 
 Name:	google.com
-Address: 2a00:1450:400f:806::200e
+Address: 198.18.160.1
 
 Name:	google.com
-Address: 198.18.160.1
+Address: 2a00:1450:400f:806::200e
 
 
 
@@ -357,7 +355,9 @@ Address: 198.18.160.1
 Server:		resolver1.opendns.com
 Address:	208.67.222.222:53
 
+Non-authoritative answer:
 
+Non-authoritative answer:
 
 
 --- nslookup o-o.myaddr.l.google.com ns1.google.com ---
